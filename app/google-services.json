@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "354819206348",
+    "firebase_url": "https://agrow-cf2d1.firebaseio.com",
+    "project_id": "agrow-cf2d1",
+    "storage_bucket": "agrow-cf2d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354819206348:android:e50940dee5e2c557",
+        "android_client_info": {
+          "package_name": "com.example.smartagro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354819206348-ua4ohdejgdsca87cjd3a6ac9qjedd9ap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartagro",
+            "certificate_hash": "64ae39777fd40e77c902951b30ab0eef12b7d610"
+          }
+        },
+        {
+          "client_id": "354819206348-se4692ahkg9hliikra7b6pprstddpbht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhC5vWwCOhuo6QtS6rpEUJVgxWrNicSI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354819206348-se4692ahkg9hliikra7b6pprstddpbht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

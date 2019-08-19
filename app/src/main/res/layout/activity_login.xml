@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginRight="5dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card0"
+        android:layout_width="340dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="85dp"
+        app:cardCornerRadius="8dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="true">
+
+
+        <RelativeLayout
+            android:layout_below="@+id/toolBar"
+            android:layout_width="340dp"
+            android:layout_height="510dp"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/textLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN"
+                android:textColor="#2682F1"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etMobile"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_below="@+id/textLogin"
+                android:textColorHint="#EDA8A8A8">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobileNo"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/colorBackground"
+                    android:fontFamily="monospace"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="15dp"
+                    android:textColor="#2682F1"
+                    android:hint="Mobile No"
+                    android:layout_marginTop="5dp"
+                    android:inputType="phone"
+                    android:background="@drawable/input_rectangle"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                app:passwordToggleTint="@android:color/white"
+                style="@style/LoginTextInputLayoutStyle"
+
+                android:textColorHint="#EDA8A8A8"
+                android:layout_below="@+id/etMobile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorBackground"
+                    android:inputType="textPassword"
+                    android:fontFamily="monospace"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="15dp"
+                    app:passwordToggleEnabled="true"
+                    android:textColor="#2682F1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/userPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user panel?"
+                android:textColor="#2682F1"
+                android:textSize="18dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etPasswordLayout"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:id="@+id/adminPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin Panel?"
+                android:textColor="#2682F1"
+                android:textSize="18dp"
+                android:layout_marginLeft="190dp"
+                android:layout_below="@+id/etPasswordLayout"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="265dp"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:layout_below="@+id/etPasswordLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rectangle_button"
+                android:textColor="@android:color/white"
+
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/adminBtn"
+                android:layout_width="265dp"
+                android:layout_height="50dp"
+                android:text="Admin login"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:layout_below="@+id/etPasswordLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rectangle_button"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"/>
+
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="#2682F1"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@+id/adminBtn"/>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No account yet?"
+                android:textColor="#2682F1"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/forgotPassword"/>
+
+            <TextView
+                android:id="@+id/textSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="0dp"
+                android:text="SIGN UP"
+                android:layout_centerHorizontal="true"
+                android:textColor="#010F20"
+                android:textSize="18dp" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textSignUp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
